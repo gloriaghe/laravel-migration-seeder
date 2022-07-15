@@ -24,3 +24,7 @@ composer require doctrine/dbal:2.*
 6) php artisan make:seeder TrainsTableSeeder ->creo il seeder per la migration Trains
 
 7)php artisan make:model nomefilecontroller
+
+8) quando il seeser è pronto lo metto nel file Databaseseeder nella cartella database scommentando la riga di esempio
+
+9) php artisan db:seed --class=TrainsTableSeeder
