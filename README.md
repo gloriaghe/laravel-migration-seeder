@@ -21,4 +21,6 @@ Tabella:
 5) se per modificare una tabella ci dice che manca un pacchetto docrtine dbal installare:
 composer require doctrine/dbal:2.*
 
-6)
+6) php artisan make:seeder TrainsTableSeeder ->creo il seeder per la migration Trains
+
+7)php artisan make:model nomefilecontroller
