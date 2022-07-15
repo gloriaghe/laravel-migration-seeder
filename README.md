@@ -4,10 +4,21 @@
 3) composer require barryvdh/laravel-debugbar --dev //questo solo se voglio installarlo per debug
 
 Per fake dati:
+
 4) composer remove fzaninotto/faker
 5) compose require fakerphp/faker
 
 Tabella:
+
 1) sistemare .env con password e node database creato su phpMyAdmin
-2) php artisan make:migration create_trains_table (nome tabella plurale)
-3)
+
+2) php artisan make:migration create_trains_table (nome tabella plurale) ->crea migrazione tabella
+
+3) php artisan migrate ->invia colonne tabella create nei file migrate
+
+4) php artisan migrate:fresh -> per refreshare tutti i dati (se dopo l frase aggiungiamo --seed refresha anche i seeds)
+
+5) se per modificare una tabella ci dice che manca un pacchetto docrtine dbal installare:
+composer require doctrine/dbal:2.*
+
+6)
