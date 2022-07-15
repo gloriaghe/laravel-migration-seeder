@@ -1,1 +1,19 @@
-//
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+display: flex;
+
+&#title{
+background-color: yellow;
+font-size: 20px;
+}
+    span{
+        width: 200px;
+        padding: 10px 10px;
+        border: 1px solid blue;
+    }
+}

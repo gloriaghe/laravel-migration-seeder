@@ -6,6 +6,18 @@
 
 <section >
     <h1>Treni:</h1>
+    <div id="title" class="train">
+        <span>AZIENDA</span>
+        <span>STAZIONE DI PARTENZA</span>
+        <span>STAZIONE DI ARRIVO</span>
+        <span>ORARIO DI PARTENZA</span>
+        <span>ORARIO DI ARRIVO</span>
+        <span>CODICE TRENO</span>
+        <span>NUMERO CARROZZE</span>
+        <span>TRENO IN ORARIO</span>
+        <span>TRENO CANCELLATO</span>
+
+    </div>
     @foreach ($trains as $train)
 <div class="train">
     <span>{{$train->azienda}}</span>
