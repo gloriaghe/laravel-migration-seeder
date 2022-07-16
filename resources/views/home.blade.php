@@ -7,28 +7,35 @@
 <section >
     <h1>Treni:</h1>
     <div id="title" class="train">
-        <span>AZIENDA</span>
-        <span>STAZIONE DI PARTENZA</span>
-        <span>STAZIONE DI ARRIVO</span>
-        <span>ORARIO DI PARTENZA</span>
-        <span>ORARIO DI ARRIVO</span>
-        <span>CODICE TRENO</span>
-        <span>NUMERO CARROZZE</span>
-        <span>TRENO IN ORARIO</span>
-        <span>TRENO CANCELLATO</span>
-
+        <span class="large">AZIENDA</span>
+        <span class="large">STAZIONE DI PARTENZA</span>
+        <span class="large">STAZIONE DI ARRIVO</span>
+        <span class="large">ORARIO DI PARTENZA</span>
+        <span class="large">ORARIO DI ARRIVO</span>
+        <span  class="light">CODICE TRENO</span>
+        <span class="light">N. CARROZZE</span>
+        <span class="light">IN ORARIO</span>
+        <span class="light">CANCELLATO</span>
     </div>
     @foreach ($trains as $train)
 <div class="train">
-    <span>{{$train->azienda}}</span>
-    <span>{{$train->stazione_di_partenza}}</span>
-    <span>{{$train->stazione_di_arrivo}}</span>
-    <span>{{$train->orario_di_partenza}}</span>
-    <span>{{$train->orario_di_arrivo}}</span>
-    <span>{{$train->codice_treno}}</span>
-    <span>{{$train->numero_carrozze}}</span>
-    <span>{{$train->in_orario}}</span>
-    <span>{{$train->cancellato}}</span>
+    <span class="large">{{$train->azienda}}</span>
+    <span class="large">{{$train->stazione_di_partenza}}</span>
+    <span class="large">{{$train->stazione_di_arrivo}}</span>
+    <span class="large">{{$train->orario_di_partenza}}</span>
+    <span class="large">{{$train->orario_di_arrivo}}</span>
+    <span class="light">{{$train->codice_treno}}</span>
+    <span class="light">{{$train->numero_carrozze}}</span>
+        @if ($train->in_orario === 1)
+        <span class="light">in orario</span>
+        @else
+        <span class="light">in ritardo</span>
+        @endif
+        @if ($train->cancellato === 1)
+        <span class="light">cancellato</span>
+        @else
+        <span class="light"> </span>
+        @endif
 
 </div>
     @endforeach
