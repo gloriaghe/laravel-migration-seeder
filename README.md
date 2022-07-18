@@ -27,6 +27,6 @@ composer require doctrine/dbal:2.*
 
 8) quando il seeser è pronto lo metto nel file Databaseseeder nella cartella database scommentando la riga di esempio
 
-9) php artisan db:seed --class=TrainsTableSeeder
+9) php artisan db:seed --class=TrainsTableSeeder (salva i seeder di questo singolo file)
 
 10) php artisan db:seed (se ho salvato i file nel file Databaseseeder posso mandare solo questo comando per salvare i dati)
