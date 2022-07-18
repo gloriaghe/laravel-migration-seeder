@@ -14,4 +14,4 @@ use App\Http\Controllers\PageController;
 |
 */
 
-Route::get('/', 'PageController@index');
+Route::get('/', 'PageController@index') ->name('home');
