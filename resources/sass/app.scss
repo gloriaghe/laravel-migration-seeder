@@ -8,8 +8,11 @@ div {
     display: flex;
 
     &#title {
-        background-color: yellow;
-        font-size: 18px;
+
+        span{
+            background-color: yellow;
+            font-weight: bold;
+        }
     }
 
     span {
@@ -19,7 +22,7 @@ div {
         font-size: 13px;
 
         &.light {
-            min-width: 120px;
+            min-width: 130px;
         }
 
         &.large {
